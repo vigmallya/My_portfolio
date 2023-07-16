@@ -85,7 +85,7 @@ display: flex;
 flex-direction: column;
 justify-content: center;
 
-@media screen and (max-wdith:480px) {
+@media screen and (max-width:480px) {
     padding: 10px;
 }
 `
