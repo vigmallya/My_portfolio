@@ -1,7 +1,7 @@
 import React from 'react'
 import { Button } from '../ButtonElements'
 import { ContactContainer,ContactWrapper, ContactRow,Column1,Column2,TextWrapper,TopLine, Subtitle, 
-    ContactForm, Form ,FormLabel, FormInput, FormTextArea , BtnWrap,ImgWrap, Img} from './ContactElemets';
+    ContactForm, Form ,FormLabel, FormInput , BtnWrap,ImgWrap, Img} from './ContactElemets';
 import {toast} from 'react-toastify';
 
 const Conatct = ({lightBg,id,imgStart, topLine, lightText,
@@ -36,7 +36,7 @@ const notifier=()=>{
                             <FormLabel htmlFor='subject' lightText={lightText}>Subject:</FormLabel>
                             <FormInput type='text' required placeholder="Write your subject"/>
                             <FormLabel htmlFor='description' lightText={lightText}>Message:</FormLabel>
-                            <FormTextArea type='text' required placeholder="Write your message" />
+                            <FormInput type='text' required placeholder="Write your message" />
                             <BtnWrap>
                                 <Button
                                 smooth={true}
