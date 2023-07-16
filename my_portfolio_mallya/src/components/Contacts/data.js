@@ -10,5 +10,6 @@ export const contactObj={
     alt: 'Contact',
     dark:true,
     primary:true,
-    darkText:true
+    darkText:true,
+    NotifyMessage :`🦄This contact form is under developement! Please contact via Mobile or Email given below`
 }

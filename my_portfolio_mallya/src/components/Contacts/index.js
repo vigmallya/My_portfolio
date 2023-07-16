@@ -1,10 +1,23 @@
 import React from 'react'
 import { Button } from '../ButtonElements'
-import { ContactContainer,ContactWrapper, ContactRow,Column1,Column2,TextWrapper,TopLine, Subtitle, ContactForm,
-        Form ,FormLabel, FormInput, FormTextArea , BtnWrap,ImgWrap, Img} from './ContactElemets'
+import { ContactContainer,ContactWrapper, ContactRow,Column1,Column2,TextWrapper,TopLine, Subtitle, 
+    ContactForm, Form ,FormLabel, FormInput, FormTextArea , BtnWrap,ImgWrap, Img} from './ContactElemets';
+import {toast} from 'react-toastify';
 
-const Conatct = ({lightBg,id,imgStart, topLine, lightText,headline,
-    darkText,description,buttonLabel,img,alt,primary, dark ,dark2,to}) => {
+const Conatct = ({lightBg,id,imgStart, topLine, lightText,
+    darkText,description,buttonLabel,img,alt,primary, dark ,dark2,NotifyMessage}) => {
+const notifier=()=>{
+    toast(NotifyMessage, {
+        position: "top-center",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "light",
+        });
+}
   return (
     <>
     <ContactContainer lightBg={lightBg} id={id}>
@@ -33,6 +46,7 @@ const Conatct = ({lightBg,id,imgStart, topLine, lightText,headline,
                                 primary={primary? 1 : 0}
                                 dark={dark ? 1: 0}
                                 dark2={dark2 ? 1: 0}
+                                onClick={notifier}
                                 >{buttonLabel}</Button>
                             </BtnWrap>
                         </Form>
