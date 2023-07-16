@@ -9,7 +9,7 @@ export const homeObjOne={
     buttonLabel: 'Know more',
     imgStart: false,
     img: require(`../../images/about.svg`).default,
-    alt: 'Car',
+    alt: 'About',
     dark:true,
     primary:true,
     darkText:false,
@@ -24,14 +24,14 @@ export const homeObjTwo={
     topLine: 'Technology Analyst',
     headline: '3+ years of experience',
     description: "I believe that every line of code has a story to tell, and I'm here to craft those stories into seamless user experiences. After exploring various fields and undergoing training in diverse areas, I have discovered a profound affinity for React.",
-    buttonLabel: 'Know my Qualification',
+    buttonLabel: 'Download CV',
     imgStart: true,
     img: require(`../../images/work.svg`).default,
-    alt: 'Car',
+    alt: 'Work',
     dark:false,
     primary:false,
     darkText:true,
-    to:'qualifications'
+    to:''
 }
 
 export const homeObjThree={
@@ -45,7 +45,7 @@ export const homeObjThree={
     buttonLabel: 'Get started',
     imgStart: false,
     img: require(`../../images/profile.svg`).default,
-    alt: 'Car',
+    alt: 'Profile',
     dark:true,
     primary:true,
     darkText:false

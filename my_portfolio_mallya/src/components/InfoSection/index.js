@@ -1,7 +1,7 @@
 import React from 'react'
-import { Button } from '../ButtonElements'
+import { Button, CVButton } from '../ButtonElements'
 import { InfoContainer, InfoWrapper, InfoRow, Column1,TextWrapper,TopLine,
-        Heading,Subtitle,BtnWrap, Column2, Img, ImgWrap } from './InfoElements'
+        Heading,Subtitle,BtnWrap, Column2, Img, ImgWrap } from './InfoElements';
 
 
 const InfoSection = ({lightBg,id,imgStart, topLine, lightText,headline,
@@ -16,7 +16,18 @@ darkText,description,buttonLabel,img,alt,primary, dark ,dark2,to}) => {
                     <TopLine>{topLine}</TopLine>
                     <Heading lightText={lightText}>{headline}</Heading>
                     <Subtitle darkText={darkText}>{description}</Subtitle>
+                    {id==='work'? 
                     <BtnWrap>
+                        <CVButton
+                        href='Vignesh_Mallya_Resume.pdf'
+                        download='Vignesh_Mallya_Resume.pdf'
+                        primary={primary? 1 : 0}
+                        dark={dark ? 1: 0}
+                        dark2={dark2 ? 1: 0}>
+                        {buttonLabel}
+                        </CVButton>
+                    </BtnWrap>
+                    : <BtnWrap>
                         <Button to={to} 
                         smooth={true}
                         duartion={500}
@@ -26,7 +37,7 @@ darkText,description,buttonLabel,img,alt,primary, dark ,dark2,to}) => {
                         dark={dark ? 1: 0}
                         dark2={dark2 ? 1: 0}
                         >{buttonLabel}</Button>
-                    </BtnWrap>
+                    </BtnWrap>}
                 </TextWrapper>
                 </Column1>
                 <Column2>
