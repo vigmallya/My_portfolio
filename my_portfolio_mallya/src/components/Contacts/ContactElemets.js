@@ -6,6 +6,7 @@ background:  ${({lightBg})=>(lightBg? '#f9f9f9':'#010606')};
 
 @media screen and (max-width:760px){
     padding: 100px 0;
+    height: 1250px;
 }
 `
 export const ContactWrapper= styled.div`
@@ -118,3 +119,4 @@ margin-bottom: 32px;
 border: none;
 border-radius: 4px;
 `
+
