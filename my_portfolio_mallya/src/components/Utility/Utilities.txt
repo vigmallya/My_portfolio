@@ -1,0 +1,13 @@
+//If we are not using any packages, below is the code for smooth scroll
+// add ref={myRef} to the target element and pass elementVisible as prop to it for css implementation
+// const myRef=useRef();
+// const [elementVisible,setElementVisible]= useState();
+
+// useEffect(()=>{
+//     const observer= new IntersectionObserver((entries)=>{
+//     const entry= entries[0]
+//     setElementVisible(entry.isIntersecting);
+// });
+// observer.observe(myRef.current);
+// },[])
+

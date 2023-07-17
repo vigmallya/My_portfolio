@@ -2,15 +2,17 @@ import React from 'react'
 import { Button, CVButton } from '../ButtonElements'
 import { InfoContainer, InfoWrapper, InfoRow, Column1,TextWrapper,TopLine,
         Heading,Subtitle,BtnWrap, Column2, Img, ImgWrap } from './InfoElements';
+import {useInView} from 'react-intersection-observer'
 
 
 const InfoSection = ({lightBg,id,imgStart, topLine, lightText,headline,
 darkText,description,buttonLabel,img,alt,primary, dark ,dark2,to}) => {
+const { ref: myRef, inView} = useInView();
   return (
     <>
     <InfoContainer lightBg={lightBg} id={id}>
         <InfoWrapper>
-            <InfoRow imgStart={imgStart}>
+            <InfoRow imgStart={imgStart} ref={myRef} inView={inView}>
                 <Column1>
                 <TextWrapper>
                     <TopLine>{topLine}</TopLine>
