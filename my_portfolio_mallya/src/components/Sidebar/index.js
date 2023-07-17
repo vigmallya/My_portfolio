@@ -14,7 +14,7 @@ const Sidebar = ({isOpen, toggle}) => {
                 </SidebarLink>
                 <SidebarLink to='work' onClick={toggle}>Work Experience
                 </SidebarLink>
-                <SidebarLink to='qualifications' onClick={toggle}>Qualifications
+                <SidebarLink to='qualifications' onClick={toggle} offset={-80}>Qualifications
                 </SidebarLink>
                 <SidebarLink to='contact' onClick={toggle}>Contact
                 </SidebarLink>

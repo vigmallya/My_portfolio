@@ -2,7 +2,7 @@ import { MdArrowForward } from 'react-icons/md'
 import styled from 'styled-components'
 
 export const ServiceContainer= styled.div`
- height: 800px;
+ height: 680px;
  display: flex;
  flex-direction: column;
  justify-content: center;
@@ -46,7 +46,19 @@ border-radius: 10px;
 max-height: 340px;
 padding: 30px;
 box-shadow: 0 1px 3px rgba(0,0,0,0.2);
-transition: all 0.2s ease-in-out;
+
+//AnimateScroll Css
+opacity: ${({inView})=>(inView?1:0)};
+transition: ${({inView})=>(inView?'all 1s':'')};
+transform: ${({inView})=>(inView? 'translateX(0)' : 'translateX(-100%)')};
+
+&.card:nth-child(1){
+    transition-delay: 600ms;
+}
+
+&.card:nth-child(2){
+    transition-delay: 400ms;
+}
 
 &:hover{
     transform: scale(1.02);

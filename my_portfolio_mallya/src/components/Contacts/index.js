@@ -3,9 +3,12 @@ import { Button } from '../ButtonElements'
 import { ContactContainer,ContactWrapper, ContactRow,Column1,Column2,TextWrapper,TopLine, Subtitle, 
     ContactForm, Form ,FormLabel, FormInput , BtnWrap,ImgWrap, Img} from './ContactElemets';
 import {toast} from 'react-toastify';
+import { useInView } from "react-intersection-observer";
 
 const Conatct = ({lightBg,id,imgStart, topLine, lightText,
     darkText,description,buttonLabel,img,alt,primary, dark ,dark2,NotifyMessage}) => {
+const { ref: myRef, inView} = useInView();
+
 const notifier=()=>{
     toast(NotifyMessage, {
         position: "top-center",
@@ -20,9 +23,9 @@ const notifier=()=>{
 }
   return (
     <>
-    <ContactContainer lightBg={lightBg} id={id}>
+    <ContactContainer lightBg={lightBg} id={id} >
         <ContactWrapper>
-            <ContactRow imgStart={imgStart}>
+            <ContactRow imgStart={imgStart} ref={myRef} inView={inView}>
                 <Column1>
                 <TextWrapper>
                     <TopLine>{topLine}</TopLine>
