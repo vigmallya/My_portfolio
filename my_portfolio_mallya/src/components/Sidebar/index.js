@@ -20,7 +20,7 @@ const Sidebar = ({isOpen, toggle}) => {
                 </SidebarLink>
             </SidebarMenu>
             <SideBtnWrap>
-                <SidebarRoute to='/'>Download CV</SidebarRoute>
+                <SidebarRoute to='/error_404'>More</SidebarRoute>
             </SideBtnWrap>
         </SidebarWrapper>
     </SidebarContainer>

@@ -68,7 +68,7 @@ const Navbar = ({toggle}) => {
               </NavItem>
             </NavMenu>
             <NavBtn>
-            <NavBtnLink to='/'>Download CV</NavBtnLink>
+            <NavBtnLink to='/error_404'>More</NavBtnLink>
             </NavBtn>
         </NavbarContainer>
     </Nav>

@@ -9,7 +9,6 @@ import Qualifications from '../components/Services';
 import Footer from '../components/Footer';
 import Conatct from '../components/Contacts';
 import { contactObj } from '../components/Contacts/data';
-// import { ToastContainer } from 'react-toastify';
 import { NotificationBar } from '../components/Utility/NotificationElements';
 import 'react-toastify/dist/ReactToastify.css';
 
@@ -28,7 +27,7 @@ const toggle=()=>{
       <MainSection/>
       <InfoSection {...homeObjOne}/>
       <InfoSection {...homeObjTwo}/>
-      <Qualifications {...imageObj}/>
+      <Qualifications imageObj={imageObj}/>
       <Conatct {...contactObj} />
       <Footer/>
       <NotificationBar/>
