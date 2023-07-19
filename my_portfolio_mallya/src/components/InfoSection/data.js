@@ -5,7 +5,7 @@ export const homeObjOne={
     lighttextDesc: true,
     topLine: "I'm Vignesh Mallya",
     headline: 'A Fullstack Developer',
-    description: "On a mission to create captivating web experiences. With a strong foundation in web development and expertise in React, I strive to create robust and user-friendly applications. My journey in the world of software development began [mention how and when you started], and I've been hooked ever since.",
+    description: "On a mission to create captivating web experiences. With a strong foundation in web development and expertise in React, I strive to create robust and user-friendly applications. My journey in the world of software development began from 2019, and I've been hooked ever since.",
     buttonLabel: 'Know more',
     imgStart: false,
     img: require(`../../images/about.svg`).default,
