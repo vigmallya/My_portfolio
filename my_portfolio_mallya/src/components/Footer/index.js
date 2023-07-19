@@ -19,34 +19,8 @@ const Footer = () => {
             {/* <FooterLinksContainer>
                 <FooterLinksWrapper>
                     <FooterLinkItems>
-                        <FooterLinkTitle>About us</FooterLinkTitle>
-                        <FooterLink to="/">How it works</FooterLink>
-                        <FooterLink to="/">Testimonials</FooterLink>
-                        <FooterLink to="/">Carriers</FooterLink>
-                        <FooterLink to="/">Investors</FooterLink>
-                        <FooterLink to="/">Terms of Service</FooterLink>
-                    </FooterLinkItems>
-                    <FooterLinkItems>
-                        <FooterLinkTitle>About us</FooterLinkTitle>
-                        <FooterLink to="/">How it works</FooterLink>
-                        <FooterLink to="/">Testimonials</FooterLink>
-                        <FooterLink to="/">Carriers</FooterLink>
-                        <FooterLink to="/">Investors</FooterLink>
-                        <FooterLink to="/">Terms of Service</FooterLink>
-                    </FooterLinkItems>
-                </FooterLinksWrapper>
-                <FooterLinksWrapper>
-                    <FooterLinkItems>
-                        <FooterLinkTitle>About us</FooterLinkTitle>
-                        <FooterLink to="/">How it works</FooterLink>
-                        <FooterLink to="/">Testimonials</FooterLink>
-                        <FooterLink to="/">Carriers</FooterLink>
-                        <FooterLink to="/">Investors</FooterLink>
-                        <FooterLink to="/">Terms of Service</FooterLink>
-                    </FooterLinkItems>
-                    <FooterLinkItems>
-                        <FooterLinkTitle>About us</FooterLinkTitle>
-                        <FooterLink to="/">How it works</FooterLink>
+                        <FooterLinkTitle>Other Pages</FooterLinkTitle>
+                        <FooterLink to="/error_404">Error Page</FooterLink>
                         <FooterLink to="/">Testimonials</FooterLink>
                         <FooterLink to="/">Carriers</FooterLink>
                         <FooterLink to="/">Investors</FooterLink>

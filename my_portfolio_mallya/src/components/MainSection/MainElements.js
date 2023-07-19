@@ -49,6 +49,14 @@ export const VideoBackground = styled.video`
   background: #232a34;
 `;
 
+export const ImageBackground = styled.img`
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  background: #232a34;
+`;
+
 // Main section details css
 
 export const MainContent = styled.div`

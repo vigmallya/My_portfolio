@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { MainContainer, MainBackground, VideoBackground, MainContent,MainH1, MainP,MainBtnWrapper,ArrowForward,ArrowRight } from './MainElements';
 import Video from '../../videos/video.mp4'
+// import Image from '../../images/HomePage3.jpg'
 import { Button } from '../ButtonElements';
 const MainSection = () => {
 
@@ -15,6 +16,7 @@ const MainSection = () => {
     <MainContainer id="home">
         <MainBackground>
             <VideoBackground autoPlay loop muted src={Video} type='video/mp4'/>
+            {/* <ImageBackground src={Image} alt='Scenary'/> */}
         </MainBackground>
         <MainContent>
           <MainH1>Hey! Welcome to my digital playground!</MainH1>
