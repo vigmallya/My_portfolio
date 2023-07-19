@@ -33,7 +33,7 @@ const Footer = () => {
                     <SocialLogo to='/' onClick={toggleHome}>
                         Mallya
                     </SocialLogo>
-                    <WebsiteRights>Mallya © {new Date().getFullYear()} All rights reserved.</WebsiteRights>
+                    <WebsiteRights>Mallya❤️© {new Date().getFullYear()} All rights reserved.</WebsiteRights>
                     <SocialIcons>
                         <SocialIconLink href='//www.facebook.com/vignesh.mallya.798/' target='_blank' aria-label='Facebook'><FaFacebook/></SocialIconLink>
                         <SocialIconLink href='//www.instagram.com/_vignesh.mallya_/' target='_blank' aria-label='Instagram'><FaInstagram/></SocialIconLink>

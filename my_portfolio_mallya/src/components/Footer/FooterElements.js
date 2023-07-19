@@ -93,6 +93,7 @@ font-weight: bold;
 export const WebsiteRights= styled.small`
 color:#fff;
 margin-bottom: 16px;
+margin-top:8px;
 `
 
 export const SocialIcons= styled.div`
