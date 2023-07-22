@@ -60,6 +60,10 @@ transform: ${({inView})=>(inView? 'translateX(0)' : 'translateX(-100%)')};
     transition-delay: 400ms;
 }
 
+&.card:nth-child(3){
+    transition-delay: 200ms;
+}
+
 &:hover{
     transform: scale(1.02);
     transition: all 0.2s ease-in-out;
