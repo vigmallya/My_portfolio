@@ -1,12 +1,12 @@
 import React from 'react'
 import { Button, CVButton } from '../ButtonElements'
 import { InfoContainer, InfoWrapper, InfoRow, Column1,TextWrapper,TopLine,
-        Heading,Subtitle,BtnWrap, Column2, Img, ImgWrap } from './InfoElements';
-import {useInView} from 'react-intersection-observer'
+        Heading,Subtitle,BtnWrap, Column2, Img, ImgWrap, AnimatedText } from './InfoElements';
+import {useInView} from 'react-intersection-observer';
 
 
 const InfoSection = ({lightBg,id,imgStart, topLine, lightText,headline,
-darkText,description,buttonLabel,img,alt,primary, dark ,dark2,to}) => {
+darkText,description,buttonLabel,img,alt,primary, dark ,dark2,to, animateText}) => {
 const { ref: myRef, inView} = useInView();
   return (
     <>
@@ -16,7 +16,22 @@ const { ref: myRef, inView} = useInView();
                 <Column1>
                 <TextWrapper>
                     <TopLine>{topLine}</TopLine>
-                    <Heading lightText={lightText}>{headline}</Heading>
+                    {animateText?<AnimatedText
+                    sequence={[
+                        'A Frontend Developer',
+                        1000,
+                        'A Backend Developer',
+                        1000,
+                        'A Full Stack Developer',
+                        1000,
+                        'A Human Being 😜',
+                        1000
+                    ]}
+                    wrapper='div'
+                    speed={50}
+                    lightText={lightText}
+                    repeat={Infinity}
+                    /> :<Heading lightText={lightText}>{headline}</Heading>}
                     <Subtitle darkText={darkText}>{description}</Subtitle>
                     {id==='work'? 
                     <BtnWrap>
