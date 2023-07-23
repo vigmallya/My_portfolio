@@ -3,7 +3,7 @@ export const homeObjOne={
     lightBg:false,
     lightText:true,
     lighttextDesc: true,
-    topLine: "I'm Vignesh Mallya",
+    topLine: "I am Vignesh Mallya",
     headline: 'A Fullstack Developer',
     description: "On a mission to create captivating web experiences. With a strong foundation in web development and expertise in React, I strive to create robust and user-friendly applications. My journey in the world of software development began from 2019, and I've been hooked ever since.",
     buttonLabel: 'Know more',
@@ -13,7 +13,8 @@ export const homeObjOne={
     dark:true,
     primary:true,
     darkText:false,
-    to:'work'
+    to:'work',
+    animateText:true
 }
 
 export const homeObjTwo={
@@ -31,7 +32,8 @@ export const homeObjTwo={
     dark:false,
     primary:false,
     darkText:true,
-    to:''
+    to:'',
+    animateText:false
 }
 
 export const homeObjThree={
@@ -48,5 +50,6 @@ export const homeObjThree={
     alt: 'Profile',
     dark:true,
     primary:true,
-    darkText:false
+    darkText:false,
+    animateText:false
 }

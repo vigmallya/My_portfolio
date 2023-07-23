@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { TypeAnimation } from 'react-type-animation';
 
 export const InfoContainer= styled.div`
 color:#fff;
@@ -70,6 +71,13 @@ color: ${({lightText})=>(lightText?'#f7f8f8':'#010606')};
 @media screen and (max-width:480px){
     font-size:32px;
 }
+`
+export const AnimatedText= styled(TypeAnimation)`
+margin-bottom: 20px;
+font-size:36px;
+line-height: 1.1;
+font-weight: 600;
+color: ${({lightText})=>(lightText?'#f7f8f8':'#010606')};
 `
 export const Subtitle= styled.p`
 max-width: 440px;

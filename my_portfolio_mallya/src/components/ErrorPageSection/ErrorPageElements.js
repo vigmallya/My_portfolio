@@ -43,7 +43,7 @@ grid-area: col1;
 //AnimateSlide Css
 opacity: ${({inView})=>(inView?1:0)};
 transition: ${({inView})=>(inView?'all 1s':'')};
-transform: ${({inView})=>(inView? 'translateX(0)' : 'translateX(-100%)')};
+transform: ${({inView})=>(inView? 'translateX(0)' : 'translateX(-20%)')};
 `
 export const Column2=styled.div`
 margin-bottom: 15px;
@@ -53,7 +53,7 @@ grid-area: col2;
 //AnimateSlide Css
 opacity: ${({inView})=>(inView?1:0)};
 transition: ${({inView})=>(inView?'all 1s':'')};
-transform: ${({inView})=>(inView? 'translateX(0)' : 'translateX(100%)')};
+transform: ${({inView})=>(inView? 'translateX(0)' : 'translateX(20%)')};
 
 &:hover{
     transform: rotate3d(1, 1, 3, -30deg);
