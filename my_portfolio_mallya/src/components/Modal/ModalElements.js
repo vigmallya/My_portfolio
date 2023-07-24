@@ -21,6 +21,7 @@ position: fixed;
 max-width: 1100px;
 width: 90%;
 height: 90%;
+max-height: 580px;
 top:50%;
 left:50%;
 z-index: 12;

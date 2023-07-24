@@ -30,7 +30,7 @@ const ModalSection = ({ displayModal, data }) => {
     if(data==='Skills'){
       element=<Skills/> ;
     }else{
-      element='Under Development';
+      element='Under Development....!!';
     }
     return element;
   }
