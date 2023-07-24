@@ -41,7 +41,6 @@ color: '#010606';
 }
 `
 export const ModalBody= styled.div`
-max-width: 440px;
 margin-bottom: 35px;
 font-size: 18px;
 line-height: 24px;
@@ -72,15 +71,15 @@ export const BodyRow= styled.div`
 display: grid;
 grid-auto-columns: minmax(auto,1fr);
 justify-content: center;
-align-items: center;
-overflow:auto;
+align-items: start;
 height: 100%;
 width: 100%;
+overflow: auto;
 grid-template-areas: ${({imgStart})=>(imgStart?`"col2 col1"`:`"col1 col2"`)};
 //AnimateScroll Css\
 transition: ${({inView})=>(inView?'all 2s ease-in-out':'')};
 
-@media screen and (max-width:760px){
+@media screen and (max-width:800px){
     grid-template-areas: ${({imgStart})=>(imgStart?`"col1" "col2"`:`"col1 col1" "col2 col2"`)};
 }
 `
@@ -88,17 +87,32 @@ export const Column1=styled.div`
 margin-bottom: 15px;
 padding: 0 15px;
 grid-area: col1;
+/* overflow: auto; */
 
 opacity: ${({inView})=>(inView?1:0)};
 transition: ${({inView})=>(inView?'all 1s':'')};
-transform: ${({inView})=>(inView? 'translateX(0)' : 'translateX(-100%)')};
+transform: ${({inView})=>(inView? 'translateX(0)' : 'translateX(-20%)')};
 `
 export const Column2=styled.div`
 margin-bottom: 15px;
 padding: 0 15px;
 grid-area: col2;
+display: flex;
+justify-content: center;
 
 opacity: ${({inView})=>(inView?1:0)};
 transition: ${({inView})=>(inView?'all 1s':'')};
-transform: ${({inView})=>(inView? 'translateX(0)' : 'translateX(-100%)')};
+transform: ${({inView})=>(inView? 'translateX(0)' : 'translateX(-20%)')};
+`
+export const ImgWrap= styled.div`
+max-width: 400px;
+max-height: 330px;
+
+`
+export const Img= styled.img`
+width: 100%;
+height: 100%;
+max-height: 330px;
+margin: 0 0 10px 0;
+padding-right: 0;
 `
