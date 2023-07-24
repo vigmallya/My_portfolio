@@ -95,13 +95,12 @@ justify-content: center;
 `
 export const Form= styled.form`
 background:  ${({lightBg})=>(lightBg?'#010606':"#40E0D0")};
-max-width: auto;
-height: auto;
+max-width: 360px;
+max-height: 420px;
 width :100%;
 z-index: 1;
 display: grid;
-margin: 0 auto;
-padding: 40px 32px;
+padding: 20px 28px;
 border-radius: 4px;
 box-shadow: 0 1px 3px rgba(0,0,0,0.9);
 
@@ -117,8 +116,8 @@ font-size: 14px;
 font-weight: 600;
 `
 export const FormInput= styled.input`
-padding: 16px 16px;
-margin-bottom: 32px;
+padding: 12px 14px;
+margin-bottom: 10px;
 border: none;
 border-radius: 4px;
 `
