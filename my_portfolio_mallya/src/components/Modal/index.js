@@ -11,8 +11,11 @@ import {
   Column1,
   Column2,
   CloseIcon,
-  Modal
+  Modal,
+  Img,
+  ImgWrap,
 } from "./ModalElements";
+import Skills from "../SkillsSection";
 
 const ModalSection = ({ displayModal, data }) => {
   useEffect(() => {
@@ -22,23 +25,35 @@ const ModalSection = ({ displayModal, data }) => {
     };
   }, []);
 
+  const DisplayData=(data)=>{
+    let element;
+    if(data==='Skills'){
+      element=<Skills/> ;
+    }else{
+      element='Under Development';
+    }
+    return element;
+  }
+
   const { ref: myRef, inView} = useInView();
   console.log(myRef, inView, "consolleeee")
   return (
     <>
     <Modal>
       <ModalContainer onClick={displayModal}></ModalContainer>
-      <ModalWrapper>
+      <ModalWrapper ref={myRef} inView={inView}>
         <BodyWrapper>
             <CloseIcon><TiArrowBack onClick={displayModal}/></CloseIcon>
             <ModalH2>{data.QualificationsH2}</ModalH2>
           <BodyRow imgStart={data.imgStart}>
             <Column1 ref={myRef} inView={inView}>
-              <ModalBody>{data.QualificationsP}</ModalBody>
+              <ModalBody>{DisplayData(data.QualificationsH2)}</ModalBody>
             </Column1>
             <Column2 ref={myRef} inView={inView}>
             <ModalBody>
-            {data.QualificationsP2}
+                <ImgWrap>
+                    <Img src={data.Icon} alt={data.alt}/>
+                </ImgWrap>
             </ModalBody>
             </Column2>
           </BodyRow>
