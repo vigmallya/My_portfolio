@@ -77,7 +77,7 @@ width:160px;
 margin-bottom: 10px;
 `
 
-export const QualificationsH1= styled.h1`
+export const ServiceH1= styled.h1`
 font-size: 2.5rem;
 color: #fff;
 margin-bottom: 64px;
@@ -87,12 +87,12 @@ margin-bottom: 64px;
 }
 `
 
-export const QualificationsH2= styled.h2`
+export const ServiceH2= styled.h2`
 font-size: 1rem;
 margin-bottom: 10px;
 `
 
-export const QualificationsP= styled.p`
+export const ServiceP= styled.p`
 font-size: 1rem;
 text-align: left ;
 `

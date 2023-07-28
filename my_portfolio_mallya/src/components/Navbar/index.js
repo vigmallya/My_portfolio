@@ -50,7 +50,7 @@ const Navbar = ({toggle}) => {
                 >Work Experience</NavLinks>
               </NavItem>
               <NavItem>
-                <NavLinks to="qualifications" 
+                <NavLinks to="services" 
                 smooth={true}
                 duaration={500}
                 spy={true}
