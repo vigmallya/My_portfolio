@@ -12,7 +12,6 @@ top:0;
 bottom:0;
 z-index: 11;
 background: #000;
-/* background: rgba(189,189,189,0.5); */
 color:#fff;
 transition: all 1s ease-in-out;
 `

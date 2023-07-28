@@ -1,19 +1,21 @@
 export const imageObj = [
     {
-      ServicesH2: "School & College",
+      ServicesH2: "Studies",
       Icon: require("../../images/school.svg").default,
       ServicesP: "view",
       ServicesP2: `ServicesP2`,
-      imgStart:false,
-      alt:'School'
+      imgStart:true,
+      alt:'Studies',
+      content:'studies'
     },
     {
-      ServicesH2: "Engineering",
+      ServicesH2: "Work",
       Icon: require("../../images/work2.svg").default ,
       ServicesP: "view",
       ServicesP2: `ServicesP2`,
-      imgStart: false,
-      alt:'Work'
+      imgStart: true,
+      alt:'Work',
+      content:'work'
     },
     {
       ServicesH2: "Skills",
@@ -21,7 +23,8 @@ export const imageObj = [
       ServicesP: "view",
       ServicesP2: `ServicesP2`,
       imgStart:false,
-      alt:'Skills'
+      alt:'Skills',
+      content:'skills'
     },
   ];
   
