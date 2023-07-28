@@ -16,6 +16,8 @@ import {
   ImgWrap,
 } from "./ModalElements";
 import Skills from "../SkillsSection";
+import TreeSection from "../TreeSection";
+import { TreeStudiesObj,TreeWorkObj } from "../TreeSection/data"; 
 
 const ModalSection = ({ displayModal, data }) => {
   useEffect(() => {
@@ -27,16 +29,17 @@ const ModalSection = ({ displayModal, data }) => {
 
   const DisplayData=(data)=>{
     let element;
-    if(data==='Skills'){
+    if(data.toLowerCase() ==='skills'){
       element=<Skills/> ;
+    }else if(data.toLowerCase()==='studies'){
+      element=<TreeSection  TreeObj={TreeStudiesObj}/>;
     }else{
-      element='Under Development....!!';
+      element=<TreeSection TreeObj={TreeWorkObj} />
     }
     return element;
   }
 
   const { ref: myRef, inView} = useInView();
-  console.log(myRef, inView, "consolleeee")
   return (
     <>
     <Modal>
@@ -47,7 +50,7 @@ const ModalSection = ({ displayModal, data }) => {
             <ModalH2>{data.ServicesH2}</ModalH2>
           <BodyRow imgStart={data.imgStart}>
             <Column1 ref={myRef} inView={inView}>
-              <ModalBody>{DisplayData(data.ServicesH2)}</ModalBody>
+              <ModalBody>{DisplayData(data.content)}</ModalBody>
             </Column1>
             <Column2 ref={myRef} inView={inView}>
             <ModalBody>

@@ -11,3 +11,41 @@
 // observer.observe(myRef.current);
 // },[])
 
+
+-----------------------Use it for Contact section-> email and mobile number design----------------------------------------------
+ <div className="qualification_tabs">
+                <div className="qualification_button button--flex">
+                    {/* graduation icon */}
+                    <div className="graduation_icon"></div>
+                    Education
+                </div>
+
+                <div className="qualification_button button--flex">
+                    {/* Work icon */}
+                    <div className="qualification_icon"></div>
+                    Work
+                </div>
+</div>
+
+.qualification_tabs{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 10px;
+}
+
+.qualification_button{
+    font-size: 24px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.qualification_button:hover{
+    color: red;
+}
+
+.qualification_icon{
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+---------------------------------
