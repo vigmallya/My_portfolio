@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
-import { ServiceContainer, ServiceCard, ServiceIcon, ServiceWrapper, QualificationsH1, QualificationsH2} from './ServiceElemets'
+import { ServiceContainer, ServiceCard, ServiceIcon, ServiceWrapper, ServiceH2, ServiceH1} from './ServiceElemets'
 import {useInView} from 'react-intersection-observer'
 import ModalSection from '../Modal';
 import {Button} from '../ButtonElements'
 
-const Qualifications = ({imageObj}) => {
+const ServiceSection = ({imageObj}) => {
 const { ref: myRef, inView} = useInView();
 const [showModal, setShowModal]= useState(false);
 const [clickedCard, setClickedCard]= useState(-1);
@@ -15,21 +15,21 @@ const displayModal=(index)=>{
 }
   return (
     <>
-    <ServiceContainer id="qualifications" ref={myRef}>
-        <QualificationsH1>My Qualifications & Skills</QualificationsH1>
+    <ServiceContainer id="services" ref={myRef}>
+        <ServiceH1>My Qualifications & Skills</ServiceH1>
         <ServiceWrapper>
             {imageObj.map((item,index)=>{
                 return (
                 <ServiceCard ref={myRef} inView={inView} className='card'>
                     <ServiceIcon src={item.Icon}/>
-                    <QualificationsH2>{item.QualificationsH2}</QualificationsH2>
-                    <Button onClick={()=>displayModal(index)}>{item.QualificationsP}</Button>
+                    <ServiceH2>{item.ServicesH2}</ServiceH2>
+                    <Button onClick={()=>displayModal(index)}>{item.ServicesP}</Button>
                 </ServiceCard>)})}
         </ServiceWrapper>
     </ServiceContainer>
-    {showModal && <ModalSection displayModal={()=>displayModal()} data={imageObj[clickedCard]}/> }
+    {showModal && <ModalSection displayModal={()=>displayModal()} data={imageObj[clickedCard]}/>}
     </>
   )
 }
 
-export default Qualifications
+export default ServiceSection;

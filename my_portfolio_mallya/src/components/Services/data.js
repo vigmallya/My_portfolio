@@ -1,25 +1,25 @@
 export const imageObj = [
     {
-      QualificationsH2: "School & College",
+      ServicesH2: "School & College",
       Icon: require("../../images/school.svg").default,
-      QualificationsP: "view",
-      QualificationsP2: `QualificationsP2`,
+      ServicesP: "view",
+      ServicesP2: `ServicesP2`,
       imgStart:false,
       alt:'School'
     },
     {
-      QualificationsH2: "Engineering",
+      ServicesH2: "Engineering",
       Icon: require("../../images/work2.svg").default ,
-      QualificationsP: "view",
-      QualificationsP2: `QualificationsP2`,
+      ServicesP: "view",
+      ServicesP2: `ServicesP2`,
       imgStart: false,
       alt:'Work'
     },
     {
-      QualificationsH2: "Skills",
+      ServicesH2: "Skills",
       Icon: require("../../images/skills.svg").default,
-      QualificationsP: "view",
-      QualificationsP2: `QualificationsP2`,
+      ServicesP: "view",
+      ServicesP2: `ServicesP2`,
       imgStart:false,
       alt:'Skills'
     },

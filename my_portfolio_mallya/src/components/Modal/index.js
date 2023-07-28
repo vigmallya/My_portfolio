@@ -44,10 +44,10 @@ const ModalSection = ({ displayModal, data }) => {
       <ModalWrapper ref={myRef} inView={inView}>
         <BodyWrapper>
             <CloseIcon><TiArrowBack onClick={displayModal}/></CloseIcon>
-            <ModalH2>{data.QualificationsH2}</ModalH2>
+            <ModalH2>{data.ServicesH2}</ModalH2>
           <BodyRow imgStart={data.imgStart}>
             <Column1 ref={myRef} inView={inView}>
-              <ModalBody>{DisplayData(data.QualificationsH2)}</ModalBody>
+              <ModalBody>{DisplayData(data.ServicesH2)}</ModalBody>
             </Column1>
             <Column2 ref={myRef} inView={inView}>
             <ModalBody>

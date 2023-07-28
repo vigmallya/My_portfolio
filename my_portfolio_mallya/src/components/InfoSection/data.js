@@ -37,7 +37,7 @@ export const homeObjTwo={
 }
 
 export const homeObjThree={
-    id:'qualifications',
+    id:'services',
     lightBg:false,
     lightText:true,
     lighttextDesc: true,
