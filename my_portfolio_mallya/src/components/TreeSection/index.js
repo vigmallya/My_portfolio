@@ -7,7 +7,7 @@ const TreeSection = ({TreeObj}) => {
     const TextDataContent = (data, index, value) => {
         return (
           <TreeData>
-            {(index%2!=0) && <> 
+            {(index%2!==0) && <> 
             <TreeEmptyDiv />
             <TreeRounderWrapper>
               <TreeRounder />
