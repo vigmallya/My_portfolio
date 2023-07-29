@@ -6,7 +6,7 @@ export const TreeStudiesObj = [
     },
     {
       Header: "Bhandarkar's Pre-University College, Kundapura.",
-      Subtitle: "12th Standard(PCMC's)",
+      Subtitle: "12th Standard(PCMC)",
       CalendarYear: "2014-2015",
     },
     {

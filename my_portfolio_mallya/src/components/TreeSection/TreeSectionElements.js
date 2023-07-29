@@ -18,10 +18,23 @@ export const TreeEmptyDiv = styled.div``
 export const TreeHeader = styled.h3`
   font-size: 16px;
   font-weight: 600;
+
+  @media screen and (max-width:480px){
+    font-size:12px;
+    font-weight: 600;
+}
 `
 export const TreeSubtitle = styled.span`
   display: inline-block;
   font-size: 15px;
+
+  @media screen and (max-width:480px){
+    font-size:12px;
+}
+
+@media screen and (max-width:360px){
+    font-size:10px;
+}
 `
 export const TreeCalendar = styled.div`
   font-size: 14px;
@@ -30,14 +43,17 @@ export const TreeCalendar = styled.div`
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  
 `
 export const TreeCalendarIcon = styled(BiCalendar)`
   font-size: 16px;
   color: #000;
   margin-right: 10px;
 `
-export const TreeCalendarYear = styled.div``
+export const TreeCalendarYear = styled.div`
+    @media screen and (max-width:480px){
+        font-size:12px;
+    }
+`
 
 export const TreeRounderWrapper = styled.div``
 

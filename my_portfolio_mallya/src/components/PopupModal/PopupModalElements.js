@@ -9,7 +9,7 @@ left: 0;
 right: 0;
 top:0;
 bottom:0;
-z-index: 11;
+z-index: 13;
 background-color: rgba(0, 0, 0, 0.61);
 backdrop-filter: blur(5px);
 color:#fff;
@@ -19,11 +19,10 @@ export const ModalWrapper= styled.div`
 position: fixed;
 max-width: 420px;
 width: 90%;
-height: 90%;
-max-height: 320px;
+height: fit-content;
 top:50%;
 left:50%;
-z-index: 12;
+z-index: 14;
 transform: translate(-50%,-50%);
 background-color: #fff;
 padding: 15px;
@@ -39,7 +38,7 @@ color: '#010606';
 text-align: center;
 
 @media screen and (max-width:480px){
-    font-size:32px;
+    font-size:20px;
 }
 `
 export const ModalBody= styled.div`
@@ -57,6 +56,7 @@ flex-direction: column;
 z-index: 1;
 height: 100%;
 width: 100%;
+padding: 10px 0px;
 justify-content: center;
 align-items: center;
 border: 2px solid #40E0D0;

@@ -83,11 +83,17 @@ transition: ${({inView})=>(inView?'all 2s ease-in-out':'')};
     grid-template-areas: ${({imgStart})=>(imgStart?`"col1" "col2"`:`"col1 col1" "col2 col2"`)};
 }
 `
+export const CertificateBodyRow= styled.div`
+height: 100%;
+width: 100%;
+padding: 0 50px;
+margin: 0 auto;
+overflow: auto;
+`
 export const Column1=styled.div`
 margin-bottom: 15px;
 padding: 0 15px;
 grid-area: col1;
-/* overflow: auto; */
 
 opacity: ${({inView})=>(inView?1:0)};
 transition: ${({inView})=>(inView?'all 1s':'')};
