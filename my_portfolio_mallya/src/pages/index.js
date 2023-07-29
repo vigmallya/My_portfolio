@@ -1,4 +1,4 @@
-import React,{useState} from 'react'
+import React,{useState, useEffect} from 'react'
 import Sidebar from '../components/Sidebar'
 import Navbar from '../components/Navbar/index';
 import MainSection from '../components/MainSection/index';
@@ -11,10 +11,26 @@ import Conatct from '../components/Contacts';
 import { contactObj } from '../components/Contacts/data';
 import { NotificationBar } from '../components/Utility/NotificationElements';
 import 'react-toastify/dist/ReactToastify.css';
+import PopupModal from '../components/PopupModal';
 
 const Home = () => {
 
 const [isOpen,setIsOpen]=useState(false);
+const [modalOpen, setModalOpen] =useState(false);
+
+useEffect(() => {
+    handleOpen();
+}, [])
+
+const handleOpen = () => {
+  let is_modal_show = sessionStorage.getItem('alreadyShown');
+  if(is_modal_show !== 'true'){
+    setTimeout(() => {
+      setModalOpen(true);
+      sessionStorage.setItem('alreadyShown','true');
+   }, 15000);
+  }  
+}
 
 const toggle=()=>{
     setIsOpen(!isOpen);
@@ -31,6 +47,7 @@ const toggle=()=>{
       <Conatct {...contactObj} />
       <Footer/>
       <NotificationBar/>
+      {modalOpen && <PopupModal setOpen={setModalOpen}/>}
     </>
   )
 }
