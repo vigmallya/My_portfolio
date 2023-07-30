@@ -13,7 +13,7 @@ background:  ${({lightBg})=>(lightBg? '#f9f9f9':'#010606')};
 export const InfoWrapper= styled.div`
 display: grid;
 z-index: 1;
-height: 760px;
+height: max-content;
 width: 100%;
 max-width: 1100px;
 margin-right: auto;
@@ -25,7 +25,8 @@ justify-content: center;
 export const InfoRow= styled.div`
 display: grid;
 grid-auto-columns: minmax(auto,1fr);
-align-items: center;
+align-items: flex-start;
+margin-top:7%;
 grid-template-areas: ${({imgStart})=>(imgStart?`"col2 col1"`:`"col1 col2"`)};
 //AnimateScroll Css
 opacity: ${({inView})=>(inView?1:0)};

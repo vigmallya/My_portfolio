@@ -2,30 +2,22 @@ import { MdArrowForward } from 'react-icons/md'
 import styled from 'styled-components'
 
 export const ServiceContainer= styled.div`
- height: 680px;
  display: flex;
  flex-direction: column;
  justify-content: center;
  align-items: center;
  background: #010606;
-
- @media screen and (max-width: 760px) {
-    height: 1250px;
-    padding: 0 24px;
- }
-
- @media screen and (max-width: 480px) {
-    height: 1500px;
- }
+ width: 100%;
 `
 export const ServiceWrapper= styled.div`
 max-width: 1000px;
+height: max-content;
 margin: 0 auto;
 display: grid;
 grid-template-columns: 1fr 1fr 1fr 1fr;
 align-items: center;
 grid-gap: 16px;
-padding: 0 50px;
+padding: 0 0 100px;
 
 @media screen and (max-width: 1000px) {
     grid-template-columns: 1fr 1fr;
@@ -33,7 +25,6 @@ padding: 0 50px;
 
 @media screen and (max-width: 760px) {
     grid-template-columns: 1fr;
-    padding:0 20px;
 }
 `
 export const ServiceCard= styled.div`
@@ -78,12 +69,12 @@ margin-bottom: 10px;
 `
 
 export const ServiceH1= styled.h1`
-font-size: 2.5rem;
+font-size: 36px;
 color: #fff;
-margin-bottom: 64px;
+margin: 80px 0 64px 30px;
 
 @media screen and (max-width:480px) {
-    font-size: 2rem;
+    font-size: 32px;
 }
 `
 

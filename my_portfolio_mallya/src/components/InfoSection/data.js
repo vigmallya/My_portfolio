@@ -35,21 +35,3 @@ export const homeObjTwo={
     to:'',
     animateText:false
 }
-
-export const homeObjThree={
-    id:'services',
-    lightBg:false,
-    lightText:true,
-    lighttextDesc: true,
-    topLine: 'Welcome to my section',
-    headline: 'Unlimited Knowledge with lots of Fun',
-    description: 'Get access to my knowledge that allows you to master in everything.',
-    buttonLabel: 'Get started',
-    imgStart: false,
-    img: require(`../../images/profile.svg`).default,
-    alt: 'Profile',
-    dark:true,
-    primary:true,
-    darkText:false,
-    animateText:false
-}
