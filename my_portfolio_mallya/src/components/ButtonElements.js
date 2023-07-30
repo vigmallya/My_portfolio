@@ -23,7 +23,7 @@ transition: all 0.2s ease-in-out;
 }
 `
 
-export const CVButton=styled.a`
+export const LinkButton=styled.a`
 border-radius: 50px;
 background: ${({primary})=>(primary? '#40E0D0':'#010606')};
 white-space: nowrap;
