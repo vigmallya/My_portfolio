@@ -1,12 +1,13 @@
 import React from 'react'
 import { Button } from '../ButtonElements'
-import { ContactContainer,ContactWrapper, ContactRow,Column1,Column2,TextWrapper,TopLine, Subtitle, 
-    ContactForm, Form ,FormLabel, FormInput , BtnWrap,ImgWrap, Img} from './ContactElemets';
+import { ContactContainer,ContactWrapper, ContactRow,Column1,Column2,TextWrapper,TopLine, 
+    ContactForm, Form ,FormLabel, FormInput , BtnWrap,ImgWrap, Img, ContactTabs,
+    ContactIcons, MailIcon, PhoneIcon, VerticalLine, LineWrapper} from './ContactElemets';
 import {toast} from 'react-toastify';
 import { useInView } from "react-intersection-observer";
 
 const Conatct = ({lightBg,id,imgStart, topLine, lightText,
-    darkText,description,buttonLabel,img,alt,primary, dark ,dark2,NotifyMessage}) => {
+    darkText,buttonLabel,img,alt,primary, dark ,dark2,NotifyMessage, mailID, mobileNumber}) => {
 const { ref: myRef, inView} = useInView();
 
 const notifier=()=>{
@@ -29,7 +30,19 @@ const notifier=()=>{
                 <Column1>
                 <TextWrapper>
                     <TopLine>{topLine}</TopLine>
-                    <Subtitle darkText={darkText}>{description}</Subtitle>
+                    <ContactTabs darkText={darkText}>
+                        <ContactIcons>
+                            <MailIcon/>
+                            {mailID}
+                        </ContactIcons>
+                        <LineWrapper>
+                            <VerticalLine/>
+                        </LineWrapper>
+                        <ContactIcons>
+                            <PhoneIcon/>
+                                {mobileNumber}
+                        </ContactIcons>
+                    </ContactTabs>
                     <ContactForm>
                         <Form action="#" lightBg={lightBg}>
                             <FormLabel htmlFor='name' lightText={lightText}>Name:</FormLabel>

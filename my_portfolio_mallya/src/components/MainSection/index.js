@@ -31,7 +31,7 @@ const MainSection = () => {
             duaration={500}
             spy={true}
             exact="true"
-            // offset={-80}
+            offset={-80}
             >Get Started {hover? <ArrowForward/>: <ArrowRight/>}</Button>
           </MainBtnWrapper>
         </MainContent>
