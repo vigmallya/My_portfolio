@@ -1,5 +1,5 @@
 import React from 'react'
-import { Button, CVButton } from '../ButtonElements'
+import { Button, LinkButton } from '../ButtonElements'
 import { InfoContainer, InfoWrapper, InfoRow, Column1,TextWrapper,TopLine,
         Heading,Subtitle,BtnWrap, Column2, Img, ImgWrap, AnimatedText } from './InfoElements';
 import {useInView} from 'react-intersection-observer';
@@ -35,14 +35,14 @@ const { ref: myRef, inView} = useInView();
                     <Subtitle darkText={darkText}>{description}</Subtitle>
                     {id==='work'? 
                     <BtnWrap>
-                        <CVButton
+                        <LinkButton
                         href='Vignesh_Mallya_Resume.pdf'
                         download='Vignesh_Mallya_Resume.pdf'
                         primary={primary? 1 : 0}
                         dark={dark ? 1: 0}
                         dark2={dark2 ? 1: 0}>
                         {buttonLabel}
-                        </CVButton>
+                        </LinkButton>
                     </BtnWrap>
                     : <BtnWrap>
                         <Button to={to} 
