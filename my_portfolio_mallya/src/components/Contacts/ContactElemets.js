@@ -6,13 +6,12 @@ background:  ${({lightBg})=>(lightBg? '#f9f9f9':'#010606')};
 
 @media screen and (max-width:760px){
     padding: 100px 0;
-    height: 1250px;
 }
 `
 export const ContactWrapper= styled.div`
 display: grid;
 z-index: 1;
-height: 860px;
+height: max-content;
 width: 100%;
 max-width: 1100px;
 margin-right: auto;
@@ -25,6 +24,7 @@ export const ContactRow= styled.div`
 display: grid;
 grid-auto-columns: minmax(auto,1fr);
 align-items: center;
+margin-top:7%;
 grid-template-areas: ${({imgStart})=>(imgStart?`"col2 col1"`:`"col1 col2"`)};
 //AnimateScroll Css
 opacity: ${({inView})=>(inView?1:0)};
