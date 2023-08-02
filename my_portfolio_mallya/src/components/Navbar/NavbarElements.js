@@ -39,6 +39,13 @@ margin-left: 24px;
 font-weight: bold;
 text-decoration: none;
 `
+export const NavName= styled.span`
+&::first-letter{
+    font-size: 2rem;
+    color: #40E0D0;
+    font-family: 'cursive';
+}
+`
 
 export const NavIcons= styled.div`
 display: none;
