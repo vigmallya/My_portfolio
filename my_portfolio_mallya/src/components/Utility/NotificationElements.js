@@ -14,4 +14,10 @@ export const NotificationBar = styled(ToastContainer)`
 .Toastify__toast-body{
     padding: 20px;
 }
+.Toastify__toast-theme--dark {
+    font-size: 15px;
+}
+.Toastify__toast-theme--light {
+    font-size: 15px;
+}
 `;
