@@ -1,11 +1,24 @@
-import styled from 'styled-components'
+import styled, {css} from 'styled-components'
 import {Link} from 'react-router-dom'
+import { FaFacebook,FaGithub, FaInstagram, FaLinkedin, FaTwitter } from 'react-icons/fa'
+import {SiGmail} from 'react-icons/si'
+
+const sharedStyle = css`
+  &:hover{
+    color:#40E0D0;
+    border: 2px solid #40E0D0;
+    border-radius: 50%;
+    padding-block: 4px;
+    transform: scale(1.5);
+    transition: 0.2s all ease-in-out;
+    }
+`
 
 export const FooterContainer = styled.footer`
 background-color: #101522;
 `
 export const FooterWrapper= styled.div`
-padding: 48px 24px;
+padding: 30px 24px;
 display: flex;
 flex-direction: column;
 justify-content: center;
@@ -106,3 +119,31 @@ export const SocialIconLink= styled.a`
 color:#fff;
 font-size: 24px;
 `
+
+export const FooterName= styled.span`
+&::first-letter{
+    font-size: 2rem;
+    color: #40E0D0;
+    font-family: 'cursive';
+}
+`
+
+export const FaFacebookIcon=styled(FaFacebook) `
+    ${sharedStyle}
+`
+export const FaGithubIcon=styled(FaGithub) `
+    ${sharedStyle}
+`
+export const FaInstagramIcon=styled(FaInstagram) `
+    ${sharedStyle}
+`
+export const FaLinkedinIcon=styled(FaLinkedin) `
+    ${sharedStyle}
+`
+export const FaTwitterIcon=styled(FaTwitter) `
+    ${sharedStyle}
+`
+export const SiGmailIcon=styled(SiGmail) `
+    ${sharedStyle}
+`
+
