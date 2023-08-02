@@ -3,6 +3,10 @@
   margin: 0;
   padding: 0;
   font-family: 'Encode Sans Expanded',sans-serif;
+
+
+  --toastify-color-success: #40E0D0;;
+  --toastify-color-error: #40E0D0;
   
 }
 
