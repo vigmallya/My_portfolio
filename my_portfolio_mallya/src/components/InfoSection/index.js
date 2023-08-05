@@ -6,7 +6,7 @@ import {useInView} from 'react-intersection-observer';
 
 
 const InfoSection = ({lightBg,id,imgStart, topLine, lightText,headline,
-darkText,description,buttonLabel,img,alt,primary, dark ,dark2,to, animateText}) => {
+darkText,description,buttonLabel,img,alt,primary, dark, to, animateText}) => {
 const { ref: myRef, inView} = useInView();
   return (
     <>
@@ -39,8 +39,7 @@ const { ref: myRef, inView} = useInView();
                         href='Vignesh_Mallya_Resume.pdf'
                         download='Vignesh_Mallya_Resume.pdf'
                         primary={primary? 1 : 0}
-                        dark={dark ? 1: 0}
-                        dark2={dark2 ? 1: 0}>
+                        dark={dark ? 1: 0}>
                         {buttonLabel}
                         </LinkButton>
                     </BtnWrap>
@@ -53,7 +52,6 @@ const { ref: myRef, inView} = useInView();
                         offset={-80}
                         primary={primary? 1 : 0}
                         dark={dark ? 1: 0}
-                        dark2={dark2 ? 1: 0}
                         >{buttonLabel}</Button>
                     </BtnWrap>}
                 </TextWrapper>

@@ -1,7 +1,7 @@
 import React from 'react'
 import { Modal, ModalContainer, ModalWrapper, BodyWrapper,
         ModalH2, ModalBody } from './PopupModalElements'
-import { Button } from '../ButtonElements';
+import { ButtonBtn } from '../ButtonElements';
 
 const PopupModal = ({setOpen}) => {
 
@@ -16,7 +16,7 @@ const PopupModal = ({setOpen}) => {
               This is a place where I showcase my passion for Web Development.
               If you have any questions, feedback, or project inquiries,
                don't hesitate to get in touch with me. I'd love to hear from you!</ModalBody>
-            <Button onClick={()=>setOpen(false)}>Get Started</Button>
+            <ButtonBtn onClick={()=>setOpen(false)}>Get Started</ButtonBtn>
         </BodyWrapper>
       </ModalWrapper>
       </Modal>

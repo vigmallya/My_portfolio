@@ -8,7 +8,7 @@ import { useInView } from "react-intersection-observer";
 import emailjs from '@emailjs/browser';
 
 const Conatct = ({lightBg,id,imgStart, topLine, lightText,
-    darkText,buttonLabel,img,alt,primary, dark ,dark2, mailID, mobileNumber}) => {
+    darkText,buttonLabel,img,alt,primary, dark , mailID, mobileNumber}) => {
 const { ref: myRef, inView} = useInView();
 
 const initialValue={name:'', email:'',subject:'', message:''};
@@ -141,7 +141,7 @@ const sendEmail = (e) => {
                         </ContactIcons>
                     </ContactTabs>
                     <ContactForm>
-                        <Form action="#" lightBg={lightBg} ref={form} autocomplete="off" onSubmit={(e)=>sendEmail(e)}>
+                        <Form action="#" lightBg={lightBg} ref={form} autoComplete="off" onSubmit={(e)=>sendEmail(e)}>
                             <FormLabel htmlFor='name' lightText={lightText}>Name:</FormLabel>
                             <FormInput type='text'  placeholder="Write your Name" value={formValue.name} name="name" onChange={(e)=>formOnChange(e)}/>
                             <ErrorMessage>{formError.name}</ErrorMessage>
@@ -155,14 +155,9 @@ const sendEmail = (e) => {
                             <FormInputArea type='text' rows="3"  placeholder="Write your message" value={formValue.message} name="message" onChange={(e)=>formOnChange(e)}/>
                             <ErrorMessage>{formError.message}</ErrorMessage>
                             <ButtonBtn
-                                smooth={true}
-                                duartion={500}
-                                spy={true} 
-                                exact="true"
                                 disabled={spinner}
                                 primary={primary? 1 : 0}
                                 dark={dark ? 1: 0}
-                                dark2={dark2 ? 1: 0}
                                 type='submit'
                             >{spinner?<Loader/>:buttonLabel}</ButtonBtn>
                             <AllErrorMessage>{allMessage}</AllErrorMessage>
