@@ -20,10 +20,10 @@ const displayModal=(index)=>{
         <ServiceWrapper>
             {imageObj.map((item,index)=>{
                 return (
-                <ServiceCard ref={myRef} inView={inView} className='card'>
+                <ServiceCard key={index} ref={myRef} inView={inView} className='card'>
                     <ServiceIcon src={item.Icon}/>
                     <ServiceH2>{item.ServicesH2}</ServiceH2>
-                    <Button onClick={()=>displayModal(index)}>{item.ServicesP}</Button>
+                    <Button to="" onClick={()=>displayModal(index)}>{item.ServicesP}</Button>
                 </ServiceCard>)})}
         </ServiceWrapper>
     </ServiceContainer>

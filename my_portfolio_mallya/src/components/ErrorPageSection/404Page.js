@@ -31,7 +31,6 @@ const Page404 = ({
   alt,
   primary,
   dark,
-  dark2,
   to,
 }) => {
     
@@ -62,7 +61,6 @@ const { ref: myRef, inView} = useInView();
                     exact="true"
                     primary={primary ? 1 : 0}
                     dark={dark ? 1 : 0}
-                    dark2={dark2 ? 1 : 0}
                   >
                     {buttonLabel}<ArrowBack/>
                   </BackHomeButton>
