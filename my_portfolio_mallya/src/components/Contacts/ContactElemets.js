@@ -1,6 +1,12 @@
-import styled from "styled-components";
+import styled, {css} from "styled-components";
 import {SiGmail} from 'react-icons/si'
 import {BiSolidPhoneCall} from 'react-icons/bi'
+
+const sharedStyle=css`
+  color:#FF0000;
+  font-size: 10px;
+  margin-bottom: 5px;
+`
 
 export const ContactContainer = styled.div`
   color: #fff;
@@ -64,10 +70,6 @@ export const TopLine = styled.p`
   text-transform: uppercase;
   margin-bottom: 16px;
 `
-export const BtnWrap = styled.div`
-  display: flex;
-  justify-content: flex-start;
-`
 
 export const ImgWrap = styled.div`
   max-width: 555px;
@@ -92,7 +94,7 @@ export const ContactForm = styled.div`
 export const Form = styled.form`
   background: ${({ lightBg }) => (lightBg ? "#010606" : "#40E0D0")};
   max-width: 360px;
-  max-height: 420px;
+  max-height: 480px;
   width: 100%;
   z-index: 1;
   display: grid;
@@ -111,12 +113,25 @@ export const FormLabel = styled.label`
   font-size: 14px;
   font-weight: 600;
 `
-export const FormInput = styled.input`
+
+const inputCSS= css`
   padding: 12px 14px;
-  margin-bottom: 10px;
+  margin-bottom: 6px;
   border: none;
   border-radius: 4px;
+  &:focus {
+    outline: none;
+}
 `
+export const FormInput = styled.input`
+  ${inputCSS}
+`
+export const FormInputArea = styled.textarea`
+  ${inputCSS}
+  resize: none;
+  /* height: 30px; */
+`
+
 
 export const ContactTabs=styled.div`
     display: flex;
@@ -151,3 +166,33 @@ export const VerticalLine=styled.div`
   transform: translate(0px, -1px);
 `
 export const LineWrapper = styled.div``
+
+export const ErrorMessage = styled.span`
+  ${sharedStyle}
+`
+
+export const AllErrorMessage = styled.span`
+  ${sharedStyle}
+  margin-bottom: 0px;
+  margin-top: 6px;
+  text-align: center;
+`
+
+//spinner element css
+export const Loader = styled.div`
+ width: 20px;
+ height: 20px;
+ border-top: 2px solid #000;
+ border-left: 2px solid #000;
+ border-radius: 50%;
+ animation: spin 0.5s linear infinite;
+
+ @keyframes spin{
+  from{
+    transform: rotate(0);
+  }
+  to{
+    transform: rotate(360deg);
+  }
+ }
+`

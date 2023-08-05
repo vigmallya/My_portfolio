@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from 'react';
-import {FaBars} from 'react-icons/fa'
+import {RiFunctionLine} from 'react-icons/ri'
 import {IconContext} from 'react-icons/lib'
 import { animateScroll as scroll } from 'react-scroll';
 import { Nav, NavbarContainer, NavLogo, NavIcons,NavMenu, NavItem, NavLinks , NavBtn, NavBtnLink, NavName} from './NavbarElements';
@@ -28,7 +28,7 @@ const Navbar = ({toggle}) => {
         <NavbarContainer>
             <NavLogo to='/' onClick={toggleHome}><NavName>Mallya</NavName></NavLogo>
             <NavIcons onClick={toggle}>
-              <FaBars/>
+              <RiFunctionLine/>
             </NavIcons>
             <NavMenu>
               <NavItem>
