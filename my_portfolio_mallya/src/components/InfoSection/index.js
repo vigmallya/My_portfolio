@@ -6,7 +6,7 @@ import {useInView} from 'react-intersection-observer';
 
 
 const InfoSection = ({lightBg,id,imgStart, topLine, lightText,headline,
-darkText,description,buttonLabel,img,alt,primary, dark, to, animateText}) => {
+darkText,description,buttonLabel,img,alt,primary, dark, to, animateText, disabled}) => {
 const { ref: myRef, inView} = useInView();
   return (
     <>
@@ -34,15 +34,16 @@ const { ref: myRef, inView} = useInView();
                     /> :<Heading lightText={lightText}>{headline}</Heading>}
                     <Subtitle darkText={darkText}>{description}</Subtitle>
                     {id==='work'? 
-                    <BtnWrap>
-                        <LinkButton
-                        href='Vignesh_Mallya_Resume.pdf'
-                        download='Vignesh_Mallya_Resume.pdf'
-                        primary={primary? 1 : 0}
-                        dark={dark ? 1: 0}>
-                        {buttonLabel}
-                        </LinkButton>
-                    </BtnWrap>
+                    // <BtnWrap>
+                    //     <LinkButton
+                    //     href='Vignesh_Mallya_Resume.pdf'
+                    //     download='Vignesh_Mallya_Resume.pdf'
+                    //     primary={primary? 1 : 0}
+                    //     dark={dark ? 1: 0}>
+                    //     {buttonLabel}
+                    //     </LinkButton>
+                    // </BtnWrap>
+                    ""
                     : <BtnWrap>
                         <Button to={to} 
                         smooth={true}

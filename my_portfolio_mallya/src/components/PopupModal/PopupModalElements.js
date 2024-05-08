@@ -19,7 +19,7 @@ export const ModalWrapper= styled.div`
 position: fixed;
 max-width: 420px;
 width: 90%;
-height: fit-content;
+height: 300px;
 top:50%;
 left:50%;
 z-index: 14;
